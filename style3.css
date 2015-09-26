@@ -1,0 +1,478 @@
+/*
+* {
+    border: blue solid 1px;
+    padding: 0;
+    box-sizing: border-box;
+}
+*/
+
+html {
+    /**/
+}
+
+h2, h3, h4, h5, a, p, li, figcaption {
+    font-family: arial;
+}
+
+h2 {
+    line-height: 1.1em;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+}
+
+html, body {
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    /*max-width: 1300px;*/
+    margin: auto;
+    /* this was key to keeping the navbar from scrolling right of the page */
+    overflow-x: hidden;
+}
+
+#jumbotron {
+    min-height: 400px;
+    float: center;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/IMG_6609.jpg');
+    background-position: center;
+    position: relative;
+}
+
+/*
+.vignette {
+    box-shadow: inset 0px 0px 15px 10px whitesmoke;
+    -webkit-mask-image: -webkit-gradient(linear, left 95%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+*/
+
+#header-title {
+    color: yellow;
+    padding-top: 10px;
+    padding-left: 40px;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    text-align: left;
+    line-height: 20px;
+}
+
+.left-content {
+    /*float: left;*/
+    margin: 0 5% 0 0;
+    width: 98%;
+    padding-left: 10px;
+}
+
+.right-content {
+    display: inline;
+    margin: 0 20px 0 2%;
+    float: right;
+    width: 46%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.left-content h2 {
+    margin: 0;
+    text-align: left;
+    font-size: 2em;
+    color: black;
+}
+
+.left-content h3 {
+    padding-top: 3px;
+    margin: 0;
+    text-align: left;
+    font-size: 1.1em;
+    color: darkgrey;
+}
+
+.left-content p {
+    text-align: justify;
+}
+
+footer {
+    clear: both;
+    width: 20%;
+    padding: 100px;
+    margin: auto;
+}
+
+#footer-img {
+    text-align: center;
+}
+
+#menu-1 {
+    position: absolute;
+    width: 1200px;
+    bottom: -30px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    text-align: center;
+    
+}
+
+#menu-object li{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0 10px;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: darkgray;
+    border-radius: 20px;
+    border: solid lightgrey;
+    -webkit-transition: all 0.5s ease;
+    box-shadow: -5px 5px 10px darkgrey;
+}
+
+#menu-object li:hover {
+    -webkit-transition: all 0.5s ease;
+    font-size: 2.0em;
+    border: solid green;
+    background-color: darkgreen;
+    color: white;
+}
+
+.secondary-content {
+    margin: 40px 0 0 0;
+}
+
+#menu-object a:visited {
+    color: blue;
+}
+
+.active {
+    font-weight: bold;
+}
+
+p, li {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+#wdwlinks {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+#article-header {
+    background-color: darkcyan;
+    /*float: left;*/
+    width: 44%;
+    padding: 5px;
+    box-shadow: -5px 5px 3px grey
+}
+
+/*
+------------------------------------
+--- VIDEO PAGE
+------------------------------------
+*/
+
+#video-selector {
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Currently not working.  Need to change the font of the options in drop-down box. */
+#video-selector option {
+    font-size: 40px;
+}
+
+#video-content {
+    text-align: center;
+}
+
+iframe {
+    align-content: center;
+    min-width: 1000;
+    height: 800;
+}
+
+#frame, .description {
+    margin: 50px auto;
+    width: 800px;
+    height: 400px;
+}
+
+/*
+------------------------------------
+--- CALENDAR PAGE
+------------------------------------
+*/
+
+#calendar-selector {
+    text-align: center;
+    font-size: 40px;
+}
+
+.body_images {
+    margin: 20px;
+}
+
+/*
+------------------------------------
+--- RESORT PAGE
+------------------------------------
+*/
+
+#resort_body_images {
+    text-align: center;
+
+}
+
+/*
+------------------------------------
+--- PARKDAY PAGE
+------------------------------------
+*/
+
+
+#park_list {
+    box-shadow: -5px 5px 5px grey;
+    border: solid black 1px;
+    background-color: lightyellow;
+}
+
+#park_list li {
+    line-height: 1.9em;
+}
+
+/*
+------------------------------------
+--- FAQs PAGE
+------------------------------------
+*/
+
+.faq_question {
+    list-style: none;
+    font-size: 1.6em;
+    font-style: bold;
+    text-indent: -20px;    
+}
+
+.faq_question button {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: lightgreen;
+}
+
+.faq_answer {
+    list-style: none;
+    margin-left: 30px;
+    display: none;
+}
+
+/*
+------------------------------------
+--- INDEX2 PAGE
+------------------------------------
+*/
+
+#home_menu {
+    float: right;
+    padding-right: 20px;
+    background-color: rgba(255,255,255,0.4);
+    margin-right: -175px;
+}
+
+#home_menu_items li{
+    color: purple;
+    font-size: 2em;
+    list-style-type: none;
+    width: 100%;
+    padding-left: 20px;
+}
+
+#home_menu_items a {
+    color: white;
+}
+
+#home_menu_items a:visited {
+    color: ghostwhite;
+}
+
+#home_menu_items li:hover {
+    background-color: rgba(255,255,255,0.6);
+}
+
+#home_menu_items ul {
+    padding: 0;
+    margin: 0;
+}
+
+#home_menu_items {
+    overflow: hidden;
+}
+
+#menu_open_button {
+    float: left;
+    margin-left: -110px;
+    color: white;
+    font-size: 2em;
+    padding-right: 15px;
+}
+
+
+/*
+------------------------------------
+--- MEDIA QUERIES - RESPONSIVE DESIGN
+------------------------------------
+*/
+
+
+@media (max-width: 1000px) {
+
+    #menu-object li{
+    display: block;
+    text-decoration: none;
+    font-size: .8em;
+    margin: 10px;
+    padding: 0;
+    border-left: none;
+    padding-left: 0;
+    line-height: 30px;
+    text-decoration: none;
+    background-color: rgba(255,255,255,.4);
+    box-shadow: initial;
+    }
+
+
+    #menu-1 {
+    display: block;
+    position: absolute;
+    width: 30%;
+    bottom: 0;
+    right: 5%;
+    left: initial;
+    border-bottom: none;
+    -webkit-transform: initial;
+    }
+    
+    #menu-object li:hover {
+    -webkit-transition: all 0.5s ease;
+    font-size: 1.2em;
+    border: solid green;
+    background-color: rgba(0,100,0,.7);
+    color: white;
+}
+    
+}
+
+
+/* iPhone 5 check */
+@media (max-width: 600px) {
+
+/*
+    body {
+        background-color: blue;
+    }
+*/
+    
+    #menu-1 {
+    margin-bottom: 5px;
+    text-align: center;
+    }
+    
+    #menu-1 {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    text-align: center;
+    background-color: rgba(255,255,255,.4)
+    
+}
+    
+    #header-title {
+        line-height: normal;
+    }
+    
+    #menu-object li{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    padding-left: 0;
+    line-height: 1.5;
+    border: none;
+    background-color: initial;
+    border-radius: initial;
+    margin: 0 5px;
+    }
+    
+    header h1 {
+    color: white;
+    margin: auto;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 20px;
+    font-size: 2em;
+    font-family: sans-serif;
+    text-align: center;
+    }
+    
+    .right-content {
+    margin: 0;
+    float: left;
+    width: 100%;
+    }
+    
+    .right-content h2 {
+    margin: 0;
+    text-align: center;
+    }
+
+    .right-content p {
+    text-align: center;
+    }
+    
+    .left-content {
+    float: left;
+    margin: 0;
+    width: 100%;
+    }
+    
+    #menu-object {
+    padding: 0;
+    }
+    
+    #article-header {
+    width: 95%;
+    }
+    
+    h1,h2 {
+    text-align: center;
+    }
+    
+    h1 {
+    font-size: 1.4em;
+    }
+    
+    h2 {
+    font-size: 1em;
+    }
+
+}
+
+
+

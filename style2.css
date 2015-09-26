@@ -1,0 +1,273 @@
+/*
+* {
+    border: blue solid 1px;
+    padding: 0;
+    box-sizing: border-box;
+}
+*/
+
+html {
+    /**/
+}
+
+h2, h3, h4, h5, a, p {
+    font-family: arial;
+}
+
+html, body {
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+body {
+    max-width: 1300px;
+    margin: auto;
+}
+
+#jumbotron {
+    min-height: 30%;
+    float: center;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/IMG_6609.jpg');
+    background-position: center;
+}
+
+#header-title {
+    color: yellow;
+    padding-top: 10px;
+    padding-left: 40px;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-align: left;
+    line-height: 10px;
+}
+
+.left-content {
+    /*float: left;*/
+    margin: 0 5% 0 0;
+    width: 98%;
+    padding-left: 10px;
+}
+
+.right-content {
+    display: inline;
+    margin: 0 20px 0 2%;
+    float: right;
+    width: 46%;
+    border-style: double;
+    border-color: darkred;
+    border-width: 8px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.left-content h2 {
+    margin: 0;
+    text-align: left;
+    font-size: 2em;
+    color: orangered
+}
+
+.left-content h3 {
+    padding-top: 3px;
+    margin: 0;
+    text-align: left;
+    font-size: 1.1em;
+    color: blue;
+}
+
+.left-content p {
+    text-align: justify;
+}
+
+footer {
+    clear: both;
+    width: 20%;
+    padding: 100px;
+    margin: auto;
+}
+
+#menu-1 {
+    border-bottom: solid 3px blue;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+#menu-object li{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0 10px;
+    padding: 0;
+    border-left: solid 1px blue;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+
+.secondary-content {
+    margin: 40px 0 0 0;
+}
+
+#menu-object a:visited {
+    color: blue;
+}
+
+#menu-object a:hover {
+    color: purple;
+}
+
+#menu-object a:active {
+    color: blue;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+#wdwlinks {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+#article-header {
+    background-color: lightgrey;
+    /*float: left;*/
+    width: 44%;
+    border-bottom: double darkgrey 10px;
+    padding: 5px;
+}
+
+/*
+------------------------------------
+--- VIDEO PAGE
+------------------------------------
+*/
+
+#video-selector {
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Currently not working.  Need to change the font of the options in drop-down box. */
+#video-selector option {
+    font-size: 40px;
+}
+
+#video-content {
+    text-align: center;
+}
+
+iframe {
+    align-content: center;
+    min-width: 1000;
+    height: 800;
+}
+
+#frame, .description {
+    margin: 50px auto;
+    width: 800px;
+    height: 400px;
+}
+
+/*
+------------------------------------
+--- CALENDAR PAGE
+------------------------------------
+*/
+
+#calendar-selector {
+    text-align: center;
+    font-size: 40px;
+}
+
+/*
+------------------------------------
+--- MEDIA QUERIES - RESPONSIVE DESIGN
+------------------------------------
+*/
+
+
+
+
+/* iPhone 5 check */
+@media (max-width: 600px) {
+
+/*
+    body {
+        background-color: blue;
+    }
+*/
+    
+    #menu-1 {
+    border-bottom: solid 3px blue;
+    margin-bottom: 5px;
+    text-align: center;
+    }
+    
+    
+    #header-title {
+        line-height: normal;
+    }
+    
+    #menu-object li{
+    display: block;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    border-left: none;
+    padding-left: 0;
+    line-height: 1.5;
+    }
+    
+    header h1 {
+    color: white;
+    margin: auto;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 20px;
+    font-size: 2em;
+    font-family: sans-serif;
+    text-align: center;
+    }
+    
+    .right-content {
+    margin: 0;
+    float: left;
+    width: 100%;
+    }
+    
+    .right-content h2 {
+    margin: 0;
+    text-align: center;
+    }
+
+    .right-content p {
+    text-align: center;
+    }
+    
+    .left-content {
+    float: left;
+    margin: 0;
+    width: 100%;
+    }
+    
+    #menu-object {
+    padding: 0;
+    }
+    
+    #article-header {
+    width: 95%;
+    }
+
+}
+
+
+
