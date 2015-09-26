@@ -29,24 +29,8 @@
         <h1>Disney 2016</h1>
         <h2>A Mudge-Riley adventure</h2>
         </div>
-        
-        <div id="home_menu">
-            <div id="menu_open_button">
-                <p>Menu  <p>
-            </div>
-            <div id="home_menu_items">
-            <ul>
-                <li><a href="index2.php"><b>Home</b></a></li>
-                <li><a href="resort.php">Resort</a></li>
-                <li><a href="parkday.php">Park Day</a></li>
-                <li><a href="faqs.php">FAQs</a></li>
-                <li><a href="calendar.php">Calendar</a></li>
-                <li><a href="videos.php">Videos</a></li>
-            </div>
-        
-            </ul>
-        
-        </div>
+<!--        Menu from PHP file-->
+        <?php include "php/menu.php"; ?>
     </div>
     
     <div class="secondary-content">
