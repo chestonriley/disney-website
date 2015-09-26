@@ -59,7 +59,7 @@ $("#home_menu").hover(function() {
     
     $(this).animate(
         {
-        "margin-right": "-175px",
+        "margin-right": "-245px",
 //        "width": "0px"
         }
     );

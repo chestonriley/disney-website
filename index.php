@@ -39,6 +39,7 @@
                 <li><a href="index2.php"><b>Home</b></a></li>
                 <li><a href="resort.php">Resort</a></li>
                 <li><a href="parkday.php">Park Day</a></li>
+                <li><a href="transportation.php">Transportation</a></li>
                 <li><a href="faqs.php">FAQs</a></li>
                 <li><a href="calendar.php">Calendar</a></li>
                 <li><a href="videos.php">Videos</a></li>
