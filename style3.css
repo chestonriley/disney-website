@@ -341,7 +341,7 @@ h2.trans_list_header {
 }
 
 #comparison_thumbnails_container {
-    margin: 150px auto;
+    margin: 50px auto;
     max-width: 800px;
 }
 
@@ -391,6 +391,12 @@ h2.trans_list_header {
     list-style: none;
     margin-left: 30px;
     display: none;
+}
+
+.faq_item {
+    border-bottom: solid 2px lightgrey;
+    margin: 20px 20px;
+    padding-bottom: 20px;
 }
 
 /*
@@ -485,6 +491,11 @@ h2.trans_list_header {
     border: solid green;
     background-color: rgba(0,100,0,.7);
     color: white;
+    }
+    
+    #header-title {
+        width: 400px;
+        font-size: 1.8em;
     }
     
 /*    body {
