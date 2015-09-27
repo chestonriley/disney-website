@@ -268,10 +268,12 @@ iframe {
     overflow: auto;
     min-height: 600px;
     max-width: 1000px;
-    margin: 100px auto;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 30px 0;
     color: white;
     font-size: 1.2em;
+    margin-top: 10%;
 }
 
 .trans_option_list_left {
@@ -298,8 +300,18 @@ h2.trans_list_header {
     margin-top: 20px;
 }
 
+#lightbox {
+    position:fixed; /* keeps the lightbox window in the current viewport */
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    background: rgba(0,0,0,.5); 
+    display: none;
+}
 
 #bus_system_list {
+    /*margin: 0 auto;*/
     background-image: url('https://wd8109.files.wordpress.com/2014/08/bus.jpg');
     background-color: darkgoldenrod;
     background-blend-mode: multiply;
@@ -309,6 +321,7 @@ h2.trans_list_header {
 }
 
 #rental_car_list {
+    /*margin: 0 auto;*/
     background-image: url('http://image.motortrend.com/f/wot/1409_2015_toyota_camry_starts_at_23795_xle_v6_at_32195/72627201/2015-toyota-camry-xle-front-side-motion-view.jpg');
     background-color: darkgreen;
     background-blend-mode: multiply;
@@ -318,12 +331,40 @@ h2.trans_list_header {
 }
 
 #taxi_list {
+    /*margin: 0 auto;*/
     background-image: url('https://chriggy.files.wordpress.com/2014/08/20140817_0032491.jpg');
     background-color: red;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+#comparison_thumbnails_container {
+    margin: 150px auto;
+    max-width: 800px;
+}
+
+.comparison_thumbnail {
+    height: 100px;
+    width: 150px;
+    margin: 0 50px;
+    color: white;
+    font-size: 1.3em;
+    border-radius: 10px 0;
+    box-shadow: -3px 3px 3px grey;
+}
+
+#rental_car_thumbnail {
+    background-color: darkgreen;
+}
+
+#bus_system_thumbnail {
+    background-color: darkgoldenrod;
+}
+
+#taxi_thumbnail {
+    background-color: darkred;
 }
 
 /*
