@@ -34,8 +34,12 @@
         
         <div class="left-content">
             <div id="article-header">
+                <div class="h2_article_title">
                 <h2>Getting Around in Disney World</h2>
+                </div>
+                <div class="h3_article_subtitle">
                 <h3>What you need to know about selecting the right option for you</h3>
+                </div>
             </div>
             <div class="para-content">
                 <p>When planning for your Disney World adventure, you find that transportation is definitely one of the more expensive aspects of your magical vacation.  But the cold, hard fact is that the complex is far to big to walk anywhere (unless you are staying at the Boardwalk).  So considering what option to choose ahead of time can help you find the right balance between budget and "pain-in-the-neck" inconvenience.  It's just like anything else at Disney World:  You get what you pay for.</p>

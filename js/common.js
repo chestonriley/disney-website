@@ -43,8 +43,24 @@ $(".faq_item button").click(function() {
 
 });
 
+//Function to manage the sub-menu slide down/up for when screen is wide
 
-//-- Index2 page specifically
+$(document).ready(function() {
+    $( '.dropdown' ).hover(
+        function(){
+            $(this).children('.sub-menu').fadeToggle(400);
+        },
+        function(){
+            $(this).children('.sub-menu').fadeToggle(400);
+        }
+    );
+});
+
+
+// end ready
+
+
+//-- Index2 page specifically.  This is written just in case you want to have a sliding menu on the index (home) page
 
 $("#home_menu").hover(function() {
 

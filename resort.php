@@ -34,8 +34,12 @@
         
         <div class="left-content">
             <div id="article-header">
+                <div class="h2_article_title">
                 <h2>The Wyndam Bonnet Creek Resort</h2>
+                </div>
+                <div class="h3_article_subtitle">
                 <h3>What to know about staying at the only timeshare on Disney property that is not Disney</h3>
+                </div>
             </div>
             <div class="para-content">
                 <p><a href="http://www.wyndhambonnetcreek.com/">The Wyndham Bonnet Creek Resort</a> is perhaps one of the best resorts on the Disney property.  As a matter of fact, I’ve had a good friend and Disney travel agent say as much, and he has stayed at Disney well over 20 times, and is a Disney travel agent.</p>

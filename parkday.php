@@ -34,8 +34,12 @@
         
         <div class="left-content">
             <div id="article-header">
+                <div class="h2_article_title">
                 <h2>Surviving Your Day in the Parks</h2>
+                </div>
+                <div class="h3_article_subtitle">
                 <h3>Setting you and your family up for magic success</h3>
+                </div>
             </div>
             <div class="para-content">
                 <p>Okay, now time to go to the parks!  But hold on just a second… what do I need to know?  First of all, the beginning of May is a lot better for crowds than the middle of June, but the parks are ALWAYS crowded.  Mentally preparing for lots of people is essential.  In addition, Disney draws tourists from all over the world.  Some cultures have a corner-stone of good manners, and others do not.  So be prepared for pushy people and try not to take it personally.</p>

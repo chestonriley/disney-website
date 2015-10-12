@@ -66,6 +66,19 @@ body {
     font-family: sans-serif;
     text-align: left;
     line-height: 20px;
+    text-shadow: -1px 1px darkblue;
+    }
+
+.h2_article_title {
+    background-color: rgba(255,255,255,0.6);
+    margin: 5px;
+    padding: 5px;
+}
+
+.h3_article_subtitle {
+    background-color: rgba(255,255,255,0.2);
+    margin: 7px;
+    padding: 5px;
 }
 
 .left-content {
@@ -98,7 +111,7 @@ img {
     margin: 0;
     text-align: left;
     font-size: 1.1em;
-    color: darkgrey;
+    color: lightgray;
 }
 
 .left-content p {
@@ -116,6 +129,12 @@ footer {
     text-align: center;
 }
 
+/*
+------------------------------------
+--- MENU BAR   
+------------------------------------
+*/
+
 #menu-1 {
     position: absolute;
     width: 1400px;
@@ -123,6 +142,7 @@ footer {
     left: 50%;
     -webkit-transform: translate(-50%,0);
     text-align: center;
+    color: blue;
     
 }
 
@@ -131,6 +151,7 @@ footer {
     text-decoration: none;
     font-size: 1.5em;
     margin: 0 10px;
+    margin-top: 0px;
     padding: 0;
     padding-left: 20px;
     padding-right: 20px;
@@ -143,18 +164,42 @@ footer {
 
 #menu-object li:hover {
     -webkit-transition: all 0.5s ease;
-    font-size: 2.0em;
+    /*font-size: 2.0em;*/
     border: solid green;
     background-color: darkgreen;
     color: white;
 }
 
-.secondary-content {
-    margin: 40px 0 0 0;
-}
-
 #menu-object a:visited {
     color: blue;
+}
+
+#menu-object li ul {    
+    position: absolute;
+    margin-top: 0;
+    padding-left: 0;
+    margin-left: -35px;
+
+}
+
+#menu-object li li {
+    display: block;
+    left: 200px;
+    font-size: 1em;
+}
+
+ul.sub-menu {
+    display: none;
+}
+
+/*
+------------------------------------
+--- OTHER CONTENT
+------------------------------------
+*/
+
+.secondary-content {
+    margin: 40px 0 0 0;
 }
 
 .active {
@@ -172,7 +217,7 @@ p, li {
 }
 
 #article-header {
-    background-color: darkcyan;
+    background-color: darkred;
     /*float: left;*/
     width: 44%;
     padding: 5px;
@@ -252,6 +297,60 @@ iframe {
 
 #park_list li {
     line-height: 1.9em;
+}
+
+#parkday_body_images {
+        width: 70%;
+    }
+
+/*
+------------------------------------
+--- PACKING PAGE
+------------------------------------
+*/
+
+#pack_list {
+    box-shadow: -5px 5px 5px grey;
+    border: solid black 1px;
+    background-color: lightcoral;
+}
+
+#pack_list li {
+    line-height: 1.9em;
+}
+
+/*
+------------------------------------
+--- DINING PAGE
+------------------------------------
+*/
+
+.slides {
+
+}
+
+.flexslider {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+#dining_viewer {
+    max-height: 720px;
+    max-width: 700px;
+    overflow: auto;
+    border: solid grey 1px;
+    box-shadow: -5px 5px 5px grey;
+}
+
+.slide_show_caption {
+    margin: 5px auto;
+    text-align: center;
+    font-size: .8em;
+}
+
+#dining_options {
+    clear: both;
 }
 
 /*
@@ -459,6 +558,10 @@ h2.trans_list_header {
 
 @media (max-width: 1050px) {
 
+    #menu-object {
+        padding: 0;
+    }
+    
     #menu-object li{
     display: block;
     text-decoration: none;
@@ -477,7 +580,7 @@ h2.trans_list_header {
     #menu-1 {
     display: block;
     position: absolute;
-    width: 30%;
+    width: 200px;
     bottom: 0;
     right: 5%;
     left: initial;
@@ -486,8 +589,8 @@ h2.trans_list_header {
     }
     
     #menu-object li:hover {
-    -webkit-transition: all 0.5s ease;
-    font-size: 1.2em;
+    -webkit-transition: reset;
+    font-size: .8em;
     border: solid green;
     background-color: rgba(0,100,0,.7);
     color: white;
@@ -498,14 +601,23 @@ h2.trans_list_header {
         font-size: 1.8em;
     }
     
-/*    body {
-    background-color: blue;
-    }*/
+    #menu-object li ul {    
+        font-size: .8em;
+        margin: 0;
+        left: -110px;
+        margin-top: -43px;
+        /*#menu-object li ul*/
+    }
     
+    #menu-object li li {
+        width: 100px;
+    }
+    
+
 }
 
 
-/* iPhone 5 check */
+/* iPhone 5/6 check */
 @media (max-width: 600px) {
 
 /*
@@ -527,11 +639,42 @@ h2.trans_list_header {
     -webkit-transform: translate(-50%,0);
     text-align: center;
     background-color: rgba(255,255,255,.4)
+    }
     
-}
+    #calendar-selector {
+    display: none;
+    }
+    
+    #jumbotron {
+        overflow: hidden;
+    }
     
     #header-title {
         line-height: normal;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    #parkday_body_images {
+        overflow: hidden;
+    }
+    
+    .comparison_thumbnail {
+        margin-bottom: 10px;
+    }
+    
+    .trans_option_list_left {
+    width: 98%;
+    margin: 0 2%;
+    float: left;
+    }
+
+    .trans_option_list_right {
+    width: 98%;
+    margin: 0 2%;
+    float: left;
     }
     
     #menu-object li{
@@ -578,6 +721,7 @@ h2.trans_list_header {
     float: left;
     margin: 0;
     width: 100%;
+    overflow-x: hidden;
     }
     
     #menu-object {
@@ -602,9 +746,9 @@ h2.trans_list_header {
     
     .trans_option_list {
     font-size: 0.8em;
+    width: 90%;
+    }
+    
 }
-
-}
-
 
 

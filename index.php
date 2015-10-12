@@ -14,8 +14,12 @@
 <style>
     #jumbotron {
         min-height: 800px;
-        background-image: url('images/IMG_20150506_070507629_HDR.jpg');
-}
+        background-image: url('images/IMG_20150508_142628552.jpg');
+    }
+    #jumbotron h1, #jumbotron h2 {
+        color: red;
+        text-shadow: -2px 2px yellow;
+    }
 </style>
 
 <body>
@@ -24,10 +28,22 @@
     
     </header>
     
+    <div id="jumbotron">
+        <div id="header-title">
+        <h1>Disney 2016</h1>
+        <h2>A Mudge-Riley adventure</h2>
+        </div>
+<!--        Menu from PHP file-->
+        <?php include "php/menu.php"; ?>
+    </div>
+<!--
+
+//This section was active, and was the slide out menu.
     <div id="jumbotron" class="vignette">
         <div id="header-title">
         <h1>Disney 2016</h1>
         <h2>A Mudge-Riley adventure</h2>
+        <?php include "php/menu.php"; ?>
         </div>
         
         <div id="home_menu">
@@ -48,6 +64,7 @@
             </ul>
         
         </div>
+    -->
     </div>
     
     <div class="secondary-content">
@@ -58,8 +75,12 @@
         
         <div class="left-content">
             <div id="article-header">
+                <div class="h2_article_title">
                 <h2>Kickin' it Riley Style at Walt Disney World.</h2>
+                </div>
+                <div class="h3_article_subtitle">
                 <h3>Everything you need to know that you don't have to figure it out on your own</h3>
+                </div>
             </div>
             <div class="para-content">
                 <p>Our family is always very excited about our annual Disney excursion.  Over the last several years, we have been able to hone our Disney World knowledge, and it has come to be a really great tool in optimizing our time together as a family.</p>
