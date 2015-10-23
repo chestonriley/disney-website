@@ -13,7 +13,7 @@
 
 <style>
     #jumbotron {
-        min-height: 800px;
+        min-height: 600px;
         background-image: url('images/IMG_20150508_142628552.jpg');
     }
     #jumbotron h1, #jumbotron h2 {
@@ -29,11 +29,11 @@
     </header>
     
     <div id="jumbotron">
+        <div class="pic_border_horizontal"></div>
         <div id="header-title">
         <h1>Disney 2016</h1>
         <h2>A Mudge-Riley adventure</h2>
         </div>
-<!--        Menu from PHP file-->
         <?php include "php/menu.php"; ?>
     </div>
 <!--
@@ -70,7 +70,8 @@
     <div class="secondary-content">
  
         <div class="right-content">
-            <img src="IMG_1856_larger.jpg" alt="family pic">
+            <img src="images/color_border_vert.png" class="decorate_border">
+            <img class="flex-img" src="IMG_1856_larger.jpg" alt="family pic">
         </div>
         
         <div class="left-content">
@@ -101,7 +102,6 @@
     </div>
     
 <?php include 'php/footer.php';?>
-        
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" src="js/common.js"></script>

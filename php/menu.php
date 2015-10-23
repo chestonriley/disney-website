@@ -11,7 +11,8 @@
                     <ul class="sub-menu">
                         <li><a href="parkday.php">Parks</a></li>
                         <li><a href="dining.php">Dining</a></li>
-                        <li><a href="#">Other Activities</a></li>
+                        <li><a href="other_activities.php">Other Activities</a></li>
+                        <li><a href="donotdo.php">Don't do's</a></li>
                     </ul>
                 </li>
                 <li><a href="resort.php">Resort</li></a>

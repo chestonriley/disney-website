@@ -11,6 +11,14 @@
     
 </head>
 
+<style>
+    #jumbotron {
+        background-image: url('images/IMG_6668 (1).jpg');
+    }
+    #jumbotron h1, #jumbotron h2 {
+    }
+</style>
+
 <body>
 
     <header id="main-header">
@@ -29,7 +37,8 @@
     <div class="secondary-content">
  
         <div class="right-content">
-            <img src="images/IMG_20150506_070538574.jpg" alt="family pic">
+            <img src="images/color_border_vert.png" class="decorate_border">
+            <img class="flex-img" src="images/IMG_20150506_070538574.jpg" alt="family pic">
         </div>
         
         <div class="left-content">

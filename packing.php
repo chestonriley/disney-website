@@ -37,7 +37,8 @@
     <div class="secondary-content">
  
         <div class="right-content">
-            <img src="http://media.boreme.com/post_media/2008/airport-luggage.jpg" alt="family pic">
+            <img src="http://media.boreme.com/post_media/2008/airport-luggage.jpg" alt="family pic" class="decorated_pic_vertical">
+            <img src="images/color_border_vert.png" class="decorate_border">
         </div>
         
         <div class="left-content">

@@ -11,8 +11,16 @@
     
 </head>
 
-<body>
+<style>
+    #jumbotron {
+        background-image: url('http://www.wdwlive.com/photos/transportation/monorail/monorail-contemporary-1-12.jpg');
+    }
+    #jumbotron h1, #jumbotron h2 {
+    }
+</style>
 
+<body>
+    
     <header id="main-header">
     
     </header>
@@ -29,7 +37,8 @@
     <div class="secondary-content">
  
         <div class="right-content">
-            <img src="http://www.doctordisney.com/wp-content/uploads/2013/08/friendshipboat.jpg" alt="family pic">
+            <img class="flex-img" src="http://www.doctordisney.com/wp-content/uploads/2013/08/friendshipboat.jpg" alt="family pic">
+            <img src="images/color_border_vert.png" class="decorate_border">
         </div>
         
         <div class="left-content">

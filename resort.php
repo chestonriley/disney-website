@@ -11,6 +11,12 @@
     
 </head>
 
+<style>
+    #jumbotron {
+        background-image: url('images/IMG_20150505_092345223.jpg');
+    }
+</style>
+
 <body>
 
     <header id="main-header">
@@ -28,8 +34,9 @@
 
     <div class="secondary-content">
  
-        <div class="right-content">
+        <div class="right-content" style="max-height: 500px">
             <img src="http://www.hhcp.com/images/wyndham%20vacation%20resort%20at%20bonnet%20creek.jpg" alt="family pic">
+            <img src="images/color_border_vert.png" class="decorate_border">
         </div>
         
         <div class="left-content">

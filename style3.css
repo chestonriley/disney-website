@@ -34,7 +34,7 @@ html, body {
 }
 
 body {
-    /*max-width: 1300px;*/
+    max-width: 1500px;
     margin: auto;
     /* this was key to keeping the navbar from scrolling right of the page */
     overflow-x: hidden;
@@ -49,6 +49,27 @@ body {
     background-image: url('images/IMG_6609.jpg');
     background-position: center;
     position: relative;
+    box-shadow: inset 40px 40px 35px rgba(0, 0, 0, .25),
+    inset -40px -40px 35px rgba(0, 0, 0, .25);
+}
+
+.pic_border_horizontal {
+    background-image: url('images/color_border_horizontal.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 30px;
+    margin-top: -5px;
+}
+
+/* Still need to get this to work to set the picture border next to the img */
+.decorate_border {
+    float: left;
+    width: 30px;
+}
+
+.decorated_pic_vertical {
+    float: left;
 }
 
 /*
@@ -70,15 +91,17 @@ body {
     }
 
 .h2_article_title {
-    background-color: rgba(255,255,255,0.6);
+    /*background-color: rgba(255,255,255,0.6);*/
     margin: 5px;
     padding: 5px;
+    border-bottom: grey solid 2px;
 }
 
 .h3_article_subtitle {
-    background-color: rgba(255,255,255,0.2);
+    /*background-color: rgba(255,255,255,0.2);*/
     margin: 7px;
     padding: 5px;
+    margin: 25px 0;
 }
 
 .left-content {
@@ -93,10 +116,16 @@ body {
     margin: 0 20px 0 2%;
     float: right;
     width: 46%;
+    display: flex;
 }
 
 img {
     max-width: 100%;
+}
+
+.flex-img {
+    height: auto;
+    width: auto;
 }
 
 .left-content h2 {
@@ -106,12 +135,17 @@ img {
     color: black;
 }
 
+.h2_article_title h2 {
+    color: lightgreen;
+    font-size: 3em;
+}
+
 .left-content h3 {
     padding-top: 3px;
     margin: 0;
     text-align: left;
     font-size: 1.1em;
-    color: lightgray;
+    color: white;
 }
 
 .left-content p {
@@ -143,6 +177,7 @@ footer {
     -webkit-transform: translate(-50%,0);
     text-align: center;
     color: blue;
+    z-index: 2;
     
 }
 
@@ -200,6 +235,7 @@ ul.sub-menu {
 
 .secondary-content {
     margin: 40px 0 0 0;
+/*    height: 100%;*/
 }
 
 .active {
@@ -217,11 +253,24 @@ p, li {
 }
 
 #article-header {
-    background-color: darkred;
-    /*float: left;*/
-    width: 44%;
+    background-color: black;
+    float: left;
+    width: 40%;
     padding: 5px;
-    box-shadow: -5px 5px 3px grey
+    box-shadow: 10px 10px 8px grey;
+    margin-top: -40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: -70px;
+    border-bottom: solid green 25px;
+    border-right: solid red 10px;
+    border-top: solid white 1px;
+    border-left: solid white 1px;
+    -ms-transform: rotate(5deg); /* IE 9 */
+    -webkit-transform: rotate(5deg); /* Safari */
+    transform: rotate(5deg);
+    border-radius: 0 50px;
+    z-index: -1;
 }
 
 /*
@@ -350,7 +399,7 @@ iframe {
 }
 
 #dining_options {
-    clear: both;
+    /*clear: both;*/
 }
 
 /*
@@ -407,6 +456,7 @@ h2.trans_list_header {
     height:100%; 
     background: rgba(0,0,0,.5); 
     display: none;
+    z-index: 2;
 }
 
 #bus_system_list {
@@ -500,6 +550,21 @@ h2.trans_list_header {
 
 /*
 ------------------------------------
+--- DONT DO PAGE
+------------------------------------
+*/
+
+
+#do_not_do_list {
+    background-color: bisque;
+}
+
+#do_not_do_list li {
+    line-height: 2em;
+}
+
+/*
+------------------------------------
 --- INDEX2 PAGE
 ------------------------------------
 */
@@ -554,6 +619,18 @@ h2.trans_list_header {
 --- MEDIA QUERIES - RESPONSIVE DESIGN
 ------------------------------------
 */
+
+@media (max-width: 1440px) {
+    #article-header {
+        width: 30%;
+        margin-left: 0;
+    }
+    
+    .h2_article_title h2 {
+        color: lightgreen;
+        font-size: 2em;
+    }
+}
 
 
 @media (max-width: 1050px) {
@@ -620,11 +697,19 @@ h2.trans_list_header {
 /* iPhone 5/6 check */
 @media (max-width: 600px) {
 
-/*
-    body {
-        background-color: blue;
+    #article-header {
+        width: 95%;
+        margin-left: 0;
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Safari */
+        transform: rotate(0deg);
+        margin: 10px 0;
     }
-*/
+    
+    .h2_article_title h2 {
+        color: lightgreen;
+        font-size: 1.5em;
+    }
     
     #menu-1 {
     margin-bottom: 5px;
@@ -726,10 +811,6 @@ h2.trans_list_header {
     
     #menu-object {
     padding: 0;
-    }
-    
-    #article-header {
-    width: 95%;
     }
     
     h1,h2 {
